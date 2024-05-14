@@ -22,3 +22,8 @@ def helloWord():
     return {
         "text": text
     }
+
+
+if(__name__ == "__main__"):
+    print("Starting externally too")
+    app.run(host="0.0.0.0")
