@@ -28,3 +28,9 @@
         state: present
         namespace: default
         src: kubernetes/flask-networking.yaml
+    - name: Apply hpa
+      k8s:
+        kubeconfig: '~/.kube/config'
+        state: present
+        namespace: default
+        src: kubernetes/flask-hpa.yaml
